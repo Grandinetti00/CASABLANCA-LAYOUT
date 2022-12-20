@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+/*-------------------------------HEADER-----------------------------*/
+header {
+    background-color: whitesmoke;
+}
+header h1 {
+    text-align: center;
+    font-family: 'Cormorant Unicase', serif;
+    font-size: 80px;
+}
+.menu {
+    justify-content: space-between;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.menu li{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.menu li a{
+    text-decoration: none;
+    font-family: 'Cormorant Unicase', serif;
+    font-size: 20px;
+    color: black;
+}
+.menu li a:hover{
+    color: gold;
+    transition: all .3s;
+}
+/*-------------------------------MAIN-----------------------------*/
+/*-----INDEX-----*/
+.cuerpoIndex section img {
+    width: 100%;
+}
+/*-----BIO-----*/
+.cuerpoBio {
+    font-family: 'Cormorant Unicase', serif;
+    font-size: 25px;
+    padding-bottom: 25px;
+}
+.cuerpoBio h3 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 25px;
+}
+.cuerpoBio img {
+    width: 360px;
+    height: 462px;
+    border: 3px solid black
+}
+.sectionBio {
+    display: flex;
+    justify-content:space-between;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+}
+.divBioUno {
+    padding-top: 40px;
+    width: 50%;
+    padding-left: 200px;
+    margin-right: 100px;
+}
+.divBioDos {
+    width: 50%;
+    padding-top: 40px;
+    padding-right: 200px;
+}
+/*-----FOTOS-----*/
+.cuerpoFotos h3 {
+    font-family: 'Cormorant Unicase', serif;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 25px;
+}
+.sectionFotos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+}
+.sectionFotos img {
+    width: 360px;
+    border: 3px solid black;
+    margin: 15px;
+}
+.sectionFotos h4 {
+    font-family: 'Cormorant Unicase', serif;
+    text-align: center;
+    font-size: 15px;
+}
+.sectionFotos h4:hover {
+    color: gold;
+    transition: all .3s;
+}
+/*-----PRODU-----*/
+.cuerpoProdu {
+    height: 650px;
+}
+.cuerpoProdu h3 {
+    font-family: 'Cormorant Unicase', serif;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 25px;
+}
+/*-----CONTACTOS-----*/
+.cuerpoContactos {
+    font-family: 'Cormorant Unicase', serif;
+    font-size: 25px;
+}
+.cuerpoContactos h3 {
+    font-size: 25px;
+    text-align: center;
+    padding-top: 20px;
+}
+.cuerpoContactos form {
+    padding-left: 60px;
+    padding-top: 30px;
+    margin-right: 30px;
+}
+.cuerpoContactos img {
+    width: 240px;
+    height: 340px;
+    border: 3px solid black
+}
+.sectionContactosUno {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 55px;
+}
+.sectionContactosDos {
+    padding-bottom: 30px;
+    justify-content: center;
+    display: flex   ;
+}
+.sectionContactosDos a{
+    font-family: 'Cormorant Unicase', serif;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+.sectionContactosDos a img{
+    width: 40px;
+    height: 40px;
+    border:none;
+}
+.sectionContactosDos a:hover {
+    color: gold;
+    transition: all .3s;
+}
+.divContactos h3 {
+    text-align: left;
+}
+/*-------------------------------FOOTER-----------------------------*/
+footer {
+    background-color: whitesmoke;
+    padding: 15px;
+    width: 100%;
+}
+footer p {
+    color: black;
+    font-family: 'Cormorant Unicase', serif;
+    font-size: 10px;
+    text-align:center
+}   
+/*-------------------------------MEDIA QUERY-----------------------------*/
+@media screen and (max-width:580px) {
+}
