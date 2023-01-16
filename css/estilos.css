@@ -47,6 +47,116 @@ header {
       height: 460px;
       border: 3px solid black; }
 
+/*-FOTOS-*/
+.cuerpoFotos h3 {
+  font-family: 'Cormorant Unicase', serif;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 25px; }
+
+.cuerpoFotos .sectionFotos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-items: center; }
+  .cuerpoFotos .sectionFotos div img {
+    width: 360px;
+    border: 3px solid black;
+    margin: 15px; }
+    .cuerpoFotos .sectionFotos div img:hover {
+      transform: scale(1.02);
+      transition: ease all .3s; }
+  .cuerpoFotos .sectionFotos div h4 {
+    font-family: 'Cormorant Unicase', serif;
+    text-align: center;
+    font-size: 15px; }
+    .cuerpoFotos .sectionFotos div h4:hover {
+      color: gold;
+      transition: ease all .3s; }
+
+/*-PRODU-*/
+.cuerpoProdu {
+  height: auto;
+  justify-content: auto; }
+  .cuerpoProdu h3 {
+    font-family: 'Cormorant Unicase', serif;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 25px; }
+  .cuerpoProdu .sectionFotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center; }
+    .cuerpoProdu .sectionFotos div img {
+      width: 360px;
+      border: 3px solid black;
+      margin: 15px; }
+      .cuerpoProdu .sectionFotos div img:hover {
+        transform: scale(1.02);
+        transition: ease all .3s; }
+    .cuerpoProdu .sectionFotos div h4 {
+      font-family: 'Cormorant Unicase', serif;
+      text-align: center;
+      font-size: 15px; }
+      .cuerpoProdu .sectionFotos div h4:hover {
+        color: gold;
+        transition: ease all .3s; }
+
+/*-CONTACTOS-*/
+.cuerpoContactos {
+  font-family: 'Cormorant Unicase', serif;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "h3 h3" "form img" "link link"; }
+  .cuerpoContactos h3 {
+    grid-area: h3;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 20px; }
+  .cuerpoContactos .sectionContactosUno {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 55px; }
+    .cuerpoContactos .sectionContactosUno form {
+      grid-area: form; }
+    .cuerpoContactos .sectionContactosUno .sectionContactosForm {
+      grid-area: form;
+      display: flex;
+      flex-direction: column;
+      gap: 8px; }
+      .cuerpoContactos .sectionContactosUno .sectionContactosForm div input::placeholder {
+        font-size: 16px;
+        padding: 5px; }
+      .cuerpoContactos .sectionContactosUno .sectionContactosForm .divContactos h3 {
+        text-align: left; }
+      .cuerpoContactos .sectionContactosUno .sectionContactosForm div .sectionContactosInput {
+        font-size: 15px; }
+        .cuerpoContactos .sectionContactosUno .sectionContactosForm div .sectionContactosInput:hover {
+          color: gold;
+          transition: ease all .3s; }
+  .cuerpoContactos section div img {
+    grid-area: img;
+    width: 360px;
+    height: 460px;
+    border: 3px solid black; }
+  .cuerpoContactos .sectionContactosDos {
+    grid-area: link;
+    padding-bottom: 30px;
+    justify-content: center;
+    display: flex; }
+  .cuerpoContactos a {
+    font-family: 'Cormorant Unicase', serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: black; }
+    .cuerpoContactos a:hover {
+      color: gold;
+      transition: ease all .3s; }
+
 /*---FOOTER---*/
 footer {
   background-color: whitesmoke;

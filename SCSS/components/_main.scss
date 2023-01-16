@@ -35,3 +35,154 @@
         }
     }
 }
+/*-FOTOS-*/
+.cuerpoFotos {
+    h3 {
+        font-family: 'Cormorant Unicase', serif;
+        text-align: center;
+        padding-top: 20px;
+        font-size: 25px;
+    }
+    .sectionFotos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-items: center;
+        div{
+            img{
+                width: 360px;
+                border: 3px solid black;
+                margin: 15px;
+                &:hover {
+                    transform: scale(1.02);
+                    transition: ease all .3s ;
+                }
+            }
+            h4{
+                font-family: 'Cormorant Unicase', serif;
+                text-align: center;
+                font-size: 15px;
+                &:hover {
+                    color: gold;
+                    transition: ease all .3s;
+                }
+            }
+        }
+    }
+}
+/*-PRODU-*/
+.cuerpoProdu{
+    height: auto;
+    justify-content: auto;
+    h3{
+        font-family: 'Cormorant Unicase', serif;
+        text-align: center;
+        padding-top: 20px;
+        font-size: 25px;
+    }
+    .sectionFotos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-items: center;
+        div{
+            img{
+                width: 360px;
+                border: 3px solid black;
+                margin: 15px;
+                &:hover {
+                    transform: scale(1.02);
+                    transition: ease all .3s ;
+                }
+            }
+            h4{
+                font-family: 'Cormorant Unicase', serif;
+                text-align: center;
+                font-size: 15px;
+                &:hover {
+                    color: gold;
+                    transition: ease all .3s;
+                }
+            }
+        }
+    }
+}
+/*-CONTACTOS-*/
+.cuerpoContactos{
+    font-family: 'Cormorant Unicase', serif;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "h3 h3"
+    "form img"
+    "link link";
+    h3{
+        grid-area: h3;
+        font-size: 25px;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .sectionContactosUno{
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        padding-bottom: 55px;
+        form{
+            grid-area: form;
+        }
+        .sectionContactosForm{
+            grid-area: form;
+             display: flex;
+            flex-direction: column;
+            gap: 8px;
+            div{
+                input::placeholder {
+                    font-size: 16px;
+                    padding: 5px;
+                }
+            }
+            .divContactos {
+                h3{
+                    text-align: left; 
+                }
+            }
+            div{
+                .sectionContactosInput{
+                    font-size: 15px;
+                    &:hover {
+                        color: gold;
+                        transition: ease all .3s;
+                    }
+                }
+            }
+        }
+    }
+    section{
+        div{
+            img{
+                grid-area: img;
+                width: 360px;
+                height: 460px;
+                border: 3px solid black;
+            }
+        }
+    }
+    .sectionContactosDos{
+        grid-area: link;
+        padding-bottom: 30px;
+        justify-content: center;
+        display: flex;
+        }
+        a{
+            font-family: 'Cormorant Unicase', serif;
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+            &:hover {
+                color: gold;
+                transition: ease all .3s;
+        }
+    }
+}
