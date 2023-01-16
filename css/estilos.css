@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*---HEADER---*/
+header {
+  background-color: whitesmoke; }
+  header h1 {
+    text-align: center;
+    font-family: 'Cormorant Unicase', serif;
+    font-size: 80px; }
+  header nav .nav .nav-item .nav-link {
+    text-decoration: none;
+    font-family: 'Cormorant Unicase', serif;
+    font-size: 20px;
+    color: black; }
+    header nav .nav .nav-item .nav-link:hover {
+      color: gold;
+      transition: all .3s; }
+
+/*---MAIN---*/
+/*-INDEX-*/
+.cuerpoIndex section img {
+  width: 100%; }
+
+/*-BIO-*/
+.cuerpoBio {
+  font-family: 'Cormorant Unicase', serif; }
+  .cuerpoBio h3 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 25px; }
+  .cuerpoBio .sectionBio {
+    font-size: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    justify-items: center;
+    align-items: center;
+    padding: 5px 25px 50px 100px; }
+    .cuerpoBio .sectionBio .sectionBioText {
+      font-size: 20px; }
+    .cuerpoBio .sectionBio div img {
+      width: 360px;
+      height: 460px;
+      border: 3px solid black; }
+
+/*---FOOTER---*/
+footer {
+  background-color: whitesmoke;
+  padding: 15px; }
+  footer p {
+    color: black;
+    font-family: 'Cormorant Unicase', serif;
+    font-size: 10px;
+    text-align: center; }

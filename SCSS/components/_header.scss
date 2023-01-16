@@ -1,0 +1,26 @@
+/*---HEADER---*/
+header {
+    background-color: whitesmoke;
+    h1{
+        text-align: center;
+        font-family: 'Cormorant Unicase', serif;
+        font-size: 80px;
+    }
+    nav {
+        .nav {
+            .nav-item{
+                .nav-link{
+                    text-decoration: none;
+                    font-family: 'Cormorant Unicase', serif;
+                    font-size: 20px;
+                    color: black;
+                    &:hover {
+                        color: gold;
+                        transition: all .3s;
+                    }
+                }
+
+            }
+        }
+    }
+} 

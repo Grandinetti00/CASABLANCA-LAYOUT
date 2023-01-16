@@ -1,0 +1,37 @@
+/*---MAIN---*/
+/*-INDEX-*/
+.cuerpoIndex {
+    section {
+        img {
+            width: 100%;
+        }
+    }
+}
+/*-BIO-*/
+.cuerpoBio {
+    font-family: 'Cormorant Unicase', serif;
+    h3{
+        text-align: center;
+        padding-top: 20px;
+        font-size: 25px;
+    }
+    .sectionBio {
+        font-size: 20px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        justify-items: center;
+        align-items: center;
+        padding: 5px 25px 50px 100px;
+        .sectionBioText{
+            font-size: 20px;
+        }
+        div{
+            img {
+                width: 360px;
+                height: 460px;
+                border: 3px solid black;
+            }
+        }
+    }
+}
