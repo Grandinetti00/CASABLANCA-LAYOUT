@@ -3,7 +3,7 @@
 .cuerpoIndex {
     section {
         img {
-            width: 100%;
+            width: $ancho;
         }
     }
 }
@@ -13,14 +13,13 @@
     h3{
         text-align: center;
         padding-top: 20px;
-        font-size: 25px;
+        font-size: nth($fuente, 9);
     }
     .sectionBio {
-        font-size: 20px;
+        @include flex (grid, nowrap, none, center);
+        font-size: nth($fuente, 4);
         width: 100%;
-        display: grid;
         grid-template-columns: 60% 40%;
-        justify-items: center;
         align-items: center;
         padding: 5px 25px 50px 100px;
         .sectionBioText{
@@ -30,7 +29,133 @@
             img {
                 width: 360px;
                 height: 460px;
-                border: 3px solid black;
+                border: 3px solid nth($colores, 2);
+            }
+        }
+    }
+}
+/*-FOTOS-*/
+.cuerpoFotos {
+    h3 {
+        @extend %texto;
+        padding-top: 20px;
+        font-size: nth($fuente, 9);
+    }
+    .sectionFotos{
+        @include flex (flex, wrap, center, center);
+        div{
+            img{
+                @extend %imagenes;
+            }
+            h4{
+                @extend %texto;
+                font-size: nth($fuente, 1);
+                &:hover {
+                    color: nth($colores, 3);
+                    transition: ease all .3s;
+                }
+            }
+        }
+    }
+}
+/*-PRODU-*/
+.cuerpoProdu{
+    height: auto;
+    justify-content: auto;
+    h3{
+        @extend %texto;
+        padding-top: 20px;
+        font-size: nth($fuente, 9);
+    }
+    .sectionFotos{
+        @include flex (flex, wrap, center, center);
+        div{
+            img{
+                @extend %imagenes;
+                }
+            h4{
+                @extend %texto;
+                font-size: nth($fuente, 1);
+                &:hover {
+                    color: nth($colores, 3);
+                    transition: ease all .3s;
+                }
+            }
+        }
+    }
+}
+/*-CONTACTOS-*/
+.cuerpoContactos{
+    @include flex (grid, nowrap, none, center);
+    font-family: 'Cormorant Unicase', serif;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "h3 h3"
+    "form img"
+    "link link";
+    h3{
+        grid-area: h3;
+        font-size: nth($fuente, 9);
+        text-align: center;
+        padding-top: 20px;
+    }
+    .sectionContactosUno{
+        @include flex (flex, nowrap, center, none);
+        padding-top: 30px;
+        padding-bottom: 55px;
+        form{
+            grid-area: form;
+        }
+        .sectionContactosForm{
+            grid-area: form;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            div{
+                input::placeholder {
+                    font-size: nth($fuente, 10);
+                    padding: 5px;
+                }
+            }
+            .divContactos {
+                h3{
+                    text-align: left; 
+                }
+            }
+            div{
+                .sectionContactosInput{
+                    font-size: nth($fuente, 1);
+                    &:hover {
+                        color: nth($colores, 3);
+                        transition: ease all .3s;
+                    }
+                }
+            }
+        }
+    }
+    section{
+        div{
+            img{
+                grid-area: img;
+                width: 360px;
+                height: 460px;
+                border: 3px solid nth($colores, 2);
+            }
+        }
+    }
+    .sectionContactosDos{
+        @include flex (flex, nowrap, center, none);
+        grid-area: link;
+        padding-bottom: 30px;
+        a{
+            font-family: 'Cormorant Unicase', serif;
+            font-size: nth($fuente, 4);
+            text-decoration: none;
+            color: nth($colores, 2);
+            &:hover {
+                color: nth($colores, 3);
+                transition: ease all .3s;
             }
         }
     }

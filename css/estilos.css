@@ -1,8 +1,21 @@
+/*---GENERAL---*/
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+.cuerpoFotos .sectionFotos div img, .cuerpoProdu .sectionFotos div img {
+  width: 360px;
+  border: 3px solid black;
+  margin: 15px; }
+  .cuerpoFotos .sectionFotos div img:hover, .cuerpoProdu .sectionFotos div img:hover {
+    transform: scale(1.02);
+    transition: ease all .3s; }
+
+.cuerpoFotos h3, .cuerpoFotos .sectionFotos div h4, .cuerpoProdu h3, .cuerpoProdu .sectionFotos div h4 {
+  font-family: 'Cormorant Unicase', serif;
+  text-align: center; }
 
 /*---HEADER---*/
 header {
@@ -33,11 +46,13 @@ header {
     padding-top: 20px;
     font-size: 25px; }
   .cuerpoBio .sectionBio {
+    display: grid;
+    flex-wrap: nowrap;
+    justify-content: none;
+    justify-items: center;
     font-size: 20px;
     width: 100%;
-    display: grid;
     grid-template-columns: 60% 40%;
-    justify-items: center;
     align-items: center;
     padding: 5px 25px 50px 100px; }
     .cuerpoBio .sectionBio .sectionBioText {
@@ -46,6 +61,100 @@ header {
       width: 360px;
       height: 460px;
       border: 3px solid black; }
+
+/*-FOTOS-*/
+.cuerpoFotos h3 {
+  padding-top: 20px;
+  font-size: 25px; }
+
+.cuerpoFotos .sectionFotos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-items: center; }
+  .cuerpoFotos .sectionFotos div h4 {
+    font-size: 15px; }
+    .cuerpoFotos .sectionFotos div h4:hover {
+      color: gold;
+      transition: ease all .3s; }
+
+/*-PRODU-*/
+.cuerpoProdu {
+  height: auto;
+  justify-content: auto; }
+  .cuerpoProdu h3 {
+    padding-top: 20px;
+    font-size: 25px; }
+  .cuerpoProdu .sectionFotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center; }
+    .cuerpoProdu .sectionFotos div h4 {
+      font-size: 15px; }
+      .cuerpoProdu .sectionFotos div h4:hover {
+        color: gold;
+        transition: ease all .3s; }
+
+/*-CONTACTOS-*/
+.cuerpoContactos {
+  display: grid;
+  flex-wrap: nowrap;
+  justify-content: none;
+  justify-items: center;
+  font-family: 'Cormorant Unicase', serif;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "h3 h3" "form img" "link link"; }
+  .cuerpoContactos h3 {
+    grid-area: h3;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 20px; }
+  .cuerpoContactos .sectionContactosUno {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    justify-items: none;
+    padding-top: 30px;
+    padding-bottom: 55px; }
+    .cuerpoContactos .sectionContactosUno form {
+      grid-area: form; }
+    .cuerpoContactos .sectionContactosUno .sectionContactosForm {
+      grid-area: form;
+      display: flex;
+      flex-direction: column;
+      gap: 8px; }
+      .cuerpoContactos .sectionContactosUno .sectionContactosForm div input::placeholder {
+        font-size: 16px;
+        padding: 5px; }
+      .cuerpoContactos .sectionContactosUno .sectionContactosForm .divContactos h3 {
+        text-align: left; }
+      .cuerpoContactos .sectionContactosUno .sectionContactosForm div .sectionContactosInput {
+        font-size: 15px; }
+        .cuerpoContactos .sectionContactosUno .sectionContactosForm div .sectionContactosInput:hover {
+          color: gold;
+          transition: ease all .3s; }
+  .cuerpoContactos section div img {
+    grid-area: img;
+    width: 360px;
+    height: 460px;
+    border: 3px solid black; }
+  .cuerpoContactos .sectionContactosDos {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    justify-items: none;
+    grid-area: link;
+    padding-bottom: 30px; }
+    .cuerpoContactos .sectionContactosDos a {
+      font-family: 'Cormorant Unicase', serif;
+      font-size: 20px;
+      text-decoration: none;
+      color: black; }
+      .cuerpoContactos .sectionContactosDos a:hover {
+        color: gold;
+        transition: ease all .3s; }
 
 /*---FOOTER---*/
 footer {
@@ -56,3 +165,89 @@ footer {
     font-family: 'Cormorant Unicase', serif;
     font-size: 10px;
     text-align: center; }
+
+/*---QUERY---*/
+@media screen and (max-width: 1070px) {
+  .cuerpoBio .sectionBio div img {
+    width: 280px;
+    height: 357px; } }
+
+@media screen and (max-width: 950px) {
+  .cuerpoBio .sectionBio .sectionBioText {
+    font-size: 15px; } }
+
+@media screen and (max-width: 980px) {
+  .cuerpoBio .sectionBio div img {
+    width: 260px;
+    height: 332px; } }
+
+@media screen and (max-width: 850px) {
+  .cuerpoBio .sectionBio {
+    grid-template-columns: 100%;
+    padding: 5px 50px 50px 50px; } }
+
+@media screen and (max-width: 765px) {
+  .cuerpoContactos section div img {
+    display: none; }
+  .cuerpoContactos {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "h3" "form" "link"; } }
+
+@media screen and (max-width: 590px) {
+  header h1 {
+    font-size: 60px;
+    padding-top: 30px; }
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  header .nav .nav-item .nav-link {
+    font-size: 15px; } }
+
+@media screen and (max-width: 450px) {
+  header h1 {
+    font-size: 50px;
+    padding-top: 40px; }
+  .cuerpoBio h3 {
+    font-size: 20px; }
+  header .nav .nav-item .nav-link {
+    font-size: 12px; }
+  footer {
+    padding: 30px; } }
+
+@media screen and (max-width: 440px) {
+  footer {
+    padding: 35px; } }
+
+@media screen and (max-width: 425px) {
+  header nav ul {
+    padding-bottom: 12px; }
+  footer {
+    padding: 40px; }
+  .cuerpoContactos .sectionContactosUno form {
+    padding-left: 70px; }
+  .cuerpoContactos .sectionContactosUno .divContactos textarea {
+    width: 90%; } }
+
+@media screen and (max-width: 410px) {
+  header h1 {
+    font-size: 40px; }
+  .cuerpoFotos h3 {
+    font-size: 20px; }
+  .cuerpoProdu h3 {
+    font-size: 20px; }
+  .cuerpoFotos .sectionFotos div img {
+    width: 280px; }
+  .cuerpoProdu .sectionFotos div img {
+    width: 280px; }
+  .cuerpoContactos h3 {
+    font-size: 20px; }
+  .cuerpoContactos .sectionContactosUno form {
+    padding-left: 50px; }
+  footer {
+    padding: 75px; } }
+
+@media screen and (max-width: 370px) {
+  .cuerpoContactos .sectionContactosUno form {
+    padding-left: 40px; } }
