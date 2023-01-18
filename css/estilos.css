@@ -1,8 +1,17 @@
+/*---GENERAL---*/
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+.cuerpoFotos .sectionFotos div img, .cuerpoProdu .sectionFotos div img {
+  width: 360px;
+  border: 3px solid black;
+  margin: 15px; }
+  .cuerpoFotos .sectionFotos div img:hover, .cuerpoProdu .sectionFotos div img:hover {
+    transform: scale(1.02);
+    transition: ease all .3s; }
 
 /*---HEADER---*/
 header {
@@ -59,13 +68,6 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   justify-items: center; }
-  .cuerpoFotos .sectionFotos div img {
-    width: 360px;
-    border: 3px solid black;
-    margin: 15px; }
-    .cuerpoFotos .sectionFotos div img:hover {
-      transform: scale(1.02);
-      transition: ease all .3s; }
   .cuerpoFotos .sectionFotos div h4 {
     font-family: 'Cormorant Unicase', serif;
     text-align: center;
@@ -88,13 +90,6 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     justify-items: center; }
-    .cuerpoProdu .sectionFotos div img {
-      width: 360px;
-      border: 3px solid black;
-      margin: 15px; }
-      .cuerpoProdu .sectionFotos div img:hover {
-        transform: scale(1.02);
-        transition: ease all .3s; }
     .cuerpoProdu .sectionFotos div h4 {
       font-family: 'Cormorant Unicase', serif;
       text-align: center;
@@ -105,9 +100,11 @@ header {
 
 /*-CONTACTOS-*/
 .cuerpoContactos {
-  font-family: 'Cormorant Unicase', serif;
-  justify-items: center;
   display: grid;
+  flex-wrap: nowrap;
+  justify-content: none;
+  justify-items: center;
+  font-family: 'Cormorant Unicase', serif;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto auto auto;
   grid-template-areas: "h3 h3" "form img" "link link"; }
@@ -166,3 +163,89 @@ footer {
     font-family: 'Cormorant Unicase', serif;
     font-size: 10px;
     text-align: center; }
+
+/*---QUERY---*/
+@media screen and (max-width: 1070px) {
+  .cuerpoBio .sectionBio div img {
+    width: 280px;
+    height: 357px; } }
+
+@media screen and (max-width: 950px) {
+  .cuerpoBio .sectionBio .sectionBioText {
+    font-size: 15px; } }
+
+@media screen and (max-width: 980px) {
+  .cuerpoBio .sectionBio div img {
+    width: 260px;
+    height: 332px; } }
+
+@media screen and (max-width: 850px) {
+  .cuerpoBio .sectionBio {
+    grid-template-columns: 100%;
+    padding: 5px 50px 50px 50px; } }
+
+@media screen and (max-width: 765px) {
+  .cuerpoContactos section div img {
+    display: none; }
+  .cuerpoContactos {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "h3" "form" "link"; } }
+
+@media screen and (max-width: 590px) {
+  header h1 {
+    font-size: 60px;
+    padding-top: 30px; }
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  header .nav .nav-item .nav-link {
+    font-size: 15px; } }
+
+@media screen and (max-width: 450px) {
+  header h1 {
+    font-size: 50px;
+    padding-top: 40px; }
+  .cuerpoBio h3 {
+    font-size: 20px; }
+  header .nav .nav-item .nav-link {
+    font-size: 12px; }
+  footer {
+    padding: 30px; } }
+
+@media screen and (max-width: 440px) {
+  footer {
+    padding: 35px; } }
+
+@media screen and (max-width: 425px) {
+  header nav ul {
+    padding-bottom: 12px; }
+  footer {
+    padding: 40px; }
+  .cuerpoContactos .sectionContactosUno form {
+    padding-left: 70px; }
+  .cuerpoContactos .sectionContactosUno .divContactos textarea {
+    width: 90%; } }
+
+@media screen and (max-width: 410px) {
+  header h1 {
+    font-size: 40px; }
+  .cuerpoFotos h3 {
+    font-size: 20px; }
+  .cuerpoProdu h3 {
+    font-size: 20px; }
+  .cuerpoFotos .sectionFotos div img {
+    width: 280px; }
+  .cuerpoProdu .sectionFotos div img {
+    width: 280px; }
+  .cuerpoContactos h3 {
+    font-size: 20px; }
+  .cuerpoContactos .sectionContactosUno form {
+    padding-left: 50px; }
+  footer {
+    padding: 75px; } }
+
+@media screen and (max-width: 370px) {
+  .cuerpoContactos .sectionContactosUno form {
+    padding-left: 40px; } }

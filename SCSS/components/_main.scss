@@ -3,7 +3,7 @@
 .cuerpoIndex {
     section {
         img {
-            width: 100%;
+            width: $ancho;
         }
     }
 }
@@ -13,10 +13,10 @@
     h3{
         text-align: center;
         padding-top: 20px;
-        font-size: 25px;
+        font-size: nth($fuente, 9);
     }
     .sectionBio {
-        font-size: 20px;
+        font-size: nth($fuente, 4);
         width: 100%;
         display: grid;
         grid-template-columns: 60% 40%;
@@ -30,7 +30,7 @@
             img {
                 width: 360px;
                 height: 460px;
-                border: 3px solid black;
+                border: 3px solid nth($colores, 2);
             }
         }
     }
@@ -41,29 +41,20 @@
         font-family: 'Cormorant Unicase', serif;
         text-align: center;
         padding-top: 20px;
-        font-size: 25px;
+        font-size: nth($fuente, 9);
     }
     .sectionFotos{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        justify-items: center;
+        @include flex (flex, wrap, center, center);
         div{
             img{
-                width: 360px;
-                border: 3px solid black;
-                margin: 15px;
-                &:hover {
-                    transform: scale(1.02);
-                    transition: ease all .3s ;
+                @extend %imagenes;
                 }
-            }
             h4{
                 font-family: 'Cormorant Unicase', serif;
                 text-align: center;
-                font-size: 15px;
+                font-size: nth($fuente, 1);
                 &:hover {
-                    color: gold;
+                    color: nth($colores, 3);
                     transition: ease all .3s;
                 }
             }
@@ -78,29 +69,20 @@
         font-family: 'Cormorant Unicase', serif;
         text-align: center;
         padding-top: 20px;
-        font-size: 25px;
+        font-size: nth($fuente, 9);
     }
     .sectionFotos{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        justify-items: center;
+        @include flex (flex, wrap, center, center);
         div{
             img{
-                width: 360px;
-                border: 3px solid black;
-                margin: 15px;
-                &:hover {
-                    transform: scale(1.02);
-                    transition: ease all .3s ;
+                @extend %imagenes;
                 }
-            }
             h4{
                 font-family: 'Cormorant Unicase', serif;
                 text-align: center;
-                font-size: 15px;
+                font-size: nth($fuente, 1);
                 &:hover {
-                    color: gold;
+                    color: nth($colores, 3);
                     transition: ease all .3s;
                 }
             }
@@ -109,9 +91,8 @@
 }
 /*-CONTACTOS-*/
 .cuerpoContactos{
+    @include flex (grid, nowrap, none, center);
     font-family: 'Cormorant Unicase', serif;
-    justify-items: center;
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto auto;
     grid-template-areas: 
@@ -120,7 +101,7 @@
     "link link";
     h3{
         grid-area: h3;
-        font-size: 25px;
+        font-size: nth($fuente, 9);
         text-align: center;
         padding-top: 20px;
     }
@@ -134,12 +115,12 @@
         }
         .sectionContactosForm{
             grid-area: form;
-             display: flex;
+            display: flex;
             flex-direction: column;
             gap: 8px;
             div{
                 input::placeholder {
-                    font-size: 16px;
+                    font-size: nth($fuente, 10);
                     padding: 5px;
                 }
             }
@@ -150,9 +131,9 @@
             }
             div{
                 .sectionContactosInput{
-                    font-size: 15px;
+                    font-size: nth($fuente, 1);
                     &:hover {
-                        color: gold;
+                        color: nth($colores, 3);
                         transition: ease all .3s;
                     }
                 }
@@ -165,7 +146,7 @@
                 grid-area: img;
                 width: 360px;
                 height: 460px;
-                border: 3px solid black;
+                border: 3px solid nth($colores, 2);
             }
         }
     }
@@ -177,11 +158,11 @@
         }
         a{
             font-family: 'Cormorant Unicase', serif;
-            font-size: 20px;
+            font-size: nth($fuente, 4);
             text-decoration: none;
-            color: black;
+            color: nth($colores, 2);
             &:hover {
-                color: gold;
+                color: nth($colores, 3);
                 transition: ease all .3s;
         }
     }

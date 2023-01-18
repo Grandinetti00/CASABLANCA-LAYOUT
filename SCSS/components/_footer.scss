@@ -1,11 +1,11 @@
 /*---FOOTER---*/
 footer {
-    background-color: whitesmoke;
+    background-color: nth($colores, 1);
     padding: 15px;
     p {
-        color: black;
+        color: nth($colores, 2);
         font-family: 'Cormorant Unicase', serif;
-        font-size: 10px;
+        font-size: nth($fuente, 8);
         text-align:center
     }
 }

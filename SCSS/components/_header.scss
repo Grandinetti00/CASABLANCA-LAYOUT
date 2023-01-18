@@ -1,10 +1,10 @@
 /*---HEADER---*/
 header {
-    background-color: whitesmoke;
+    background-color: nth($colores, 1);
     h1{
         text-align: center;
         font-family: 'Cormorant Unicase', serif;
-        font-size: 80px;
+        font-size: nth($fuente, 7);
     }
     nav {
         .nav {
@@ -12,10 +12,10 @@ header {
                 .nav-link{
                     text-decoration: none;
                     font-family: 'Cormorant Unicase', serif;
-                    font-size: 20px;
-                    color: black;
+                    font-size: nth($fuente, 4);
+                    color: nth($colores, 2);
                     &:hover {
-                        color: gold;
+                        color: nth($colores, 3);
                         transition: all .3s;
                     }
                 }

@@ -1,0 +1,116 @@
+/*---QUERY---*/
+@media screen and (max-width:1070px) {
+    .cuerpoBio .sectionBio div img {
+        width: 280px;
+        height: 357px;
+    }
+}
+@media screen and (max-width:950px) {
+    .cuerpoBio .sectionBio .sectionBioText {
+        font-size: nth($fuente, 1);
+    }
+}
+@media screen and (max-width:980px) {
+    .cuerpoBio .sectionBio div img {
+        width: 260px;
+        height: 332px;
+    }
+}
+@media screen and (max-width:850px) {
+    .cuerpoBio .sectionBio {
+        grid-template-columns: 100%;
+        padding: 5px 50px 50px 50px
+    }
+}
+@media screen and (max-width:765px) {
+    .cuerpoContactos section div img  {
+        display: none;
+    }
+    .cuerpoContactos {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "h3"
+        "form"
+        "link";
+    }
+}
+@media screen and (max-width:590px) {
+    header h1 {
+        font-size: nth($fuente, 2);
+        padding-top: 30px;
+    }
+    header nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header .nav .nav-item .nav-link {
+        font-size: nth($fuente, 1);
+    }
+}
+@media screen and (max-width:450px) {
+    header h1 {
+        font-size: nth($fuente, 3);
+        padding-top: 40px;
+    }
+    .cuerpoBio h3 {
+        font-size: nth($fuente, 4);
+    }
+    header .nav .nav-item .nav-link {
+        font-size: nth($fuente, 5);
+    }
+    footer {
+        padding: 30px;
+    }
+}
+@media screen and (max-width:440px) {
+    footer {
+        padding: 35px;
+    }
+}
+@media screen and (max-width:425px) {
+    header nav ul{
+        padding-bottom: 12px;
+    }
+    footer {
+        padding: 40px;
+    }
+    .cuerpoContactos .sectionContactosUno form {
+        padding-left: 70px;
+    }
+    .cuerpoContactos .sectionContactosUno .divContactos textarea {
+        width: 90%;
+    }
+}
+@media screen and (max-width:410px) {
+    header h1 {
+        font-size: nth($fuente, 6);
+    }
+    .cuerpoFotos h3 {
+        font-size: nth($fuente, 4)
+    }
+    .cuerpoProdu h3 {
+        font-size: nth($fuente, 4)
+    }
+    .cuerpoFotos .sectionFotos div img{
+        width: 280px;
+    }
+    .cuerpoProdu .sectionFotos div img{
+        width: 280px;
+    }
+    .cuerpoContactos h3 {
+        font-size: nth($fuente, 4)
+    }
+    .cuerpoContactos .sectionContactosUno form {
+        padding-left: 50px;
+    }
+    footer {
+        padding: 75px;
+    }
+}
+@media screen and (max-width:370px) {
+    .cuerpoContactos .sectionContactosUno form {
+        padding-left: 40px;
+    }
+}
