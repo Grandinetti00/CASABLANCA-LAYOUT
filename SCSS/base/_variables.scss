@@ -26,6 +26,11 @@ $fuente:
         transition: ease all .3s ;
     }
 }
+%texto {
+    font-family: 'Cormorant Unicase', serif;
+    text-align: center;
+}
+
 // MIXIN //
 @mixin flex ($display, $flex-wrap, $justify-content, $justify-items){
     display: $display;

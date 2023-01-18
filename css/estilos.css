@@ -13,6 +13,10 @@
     transform: scale(1.02);
     transition: ease all .3s; }
 
+.cuerpoFotos h3, .cuerpoFotos .sectionFotos div h4, .cuerpoProdu h3, .cuerpoProdu .sectionFotos div h4 {
+  font-family: 'Cormorant Unicase', serif;
+  text-align: center; }
+
 /*---HEADER---*/
 header {
   background-color: whitesmoke; }
@@ -42,11 +46,13 @@ header {
     padding-top: 20px;
     font-size: 25px; }
   .cuerpoBio .sectionBio {
+    display: grid;
+    flex-wrap: nowrap;
+    justify-content: none;
+    justify-items: center;
     font-size: 20px;
     width: 100%;
-    display: grid;
     grid-template-columns: 60% 40%;
-    justify-items: center;
     align-items: center;
     padding: 5px 25px 50px 100px; }
     .cuerpoBio .sectionBio .sectionBioText {
@@ -58,8 +64,6 @@ header {
 
 /*-FOTOS-*/
 .cuerpoFotos h3 {
-  font-family: 'Cormorant Unicase', serif;
-  text-align: center;
   padding-top: 20px;
   font-size: 25px; }
 
@@ -69,8 +73,6 @@ header {
   justify-content: center;
   justify-items: center; }
   .cuerpoFotos .sectionFotos div h4 {
-    font-family: 'Cormorant Unicase', serif;
-    text-align: center;
     font-size: 15px; }
     .cuerpoFotos .sectionFotos div h4:hover {
       color: gold;
@@ -81,8 +83,6 @@ header {
   height: auto;
   justify-content: auto; }
   .cuerpoProdu h3 {
-    font-family: 'Cormorant Unicase', serif;
-    text-align: center;
     padding-top: 20px;
     font-size: 25px; }
   .cuerpoProdu .sectionFotos {
@@ -91,8 +91,6 @@ header {
     justify-content: center;
     justify-items: center; }
     .cuerpoProdu .sectionFotos div h4 {
-      font-family: 'Cormorant Unicase', serif;
-      text-align: center;
       font-size: 15px; }
       .cuerpoProdu .sectionFotos div h4:hover {
         color: gold;
@@ -115,7 +113,9 @@ header {
     padding-top: 20px; }
   .cuerpoContactos .sectionContactosUno {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
+    justify-items: none;
     padding-top: 30px;
     padding-bottom: 55px; }
     .cuerpoContactos .sectionContactosUno form {
@@ -141,18 +141,20 @@ header {
     height: 460px;
     border: 3px solid black; }
   .cuerpoContactos .sectionContactosDos {
-    grid-area: link;
-    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
-    display: flex; }
-  .cuerpoContactos a {
-    font-family: 'Cormorant Unicase', serif;
-    font-size: 20px;
-    text-decoration: none;
-    color: black; }
-    .cuerpoContactos a:hover {
-      color: gold;
-      transition: ease all .3s; }
+    justify-items: none;
+    grid-area: link;
+    padding-bottom: 30px; }
+    .cuerpoContactos .sectionContactosDos a {
+      font-family: 'Cormorant Unicase', serif;
+      font-size: 20px;
+      text-decoration: none;
+      color: black; }
+      .cuerpoContactos .sectionContactosDos a:hover {
+        color: gold;
+        transition: ease all .3s; }
 
 /*---FOOTER---*/
 footer {

@@ -16,11 +16,10 @@
         font-size: nth($fuente, 9);
     }
     .sectionBio {
+        @include flex (grid, nowrap, none, center);
         font-size: nth($fuente, 4);
         width: 100%;
-        display: grid;
         grid-template-columns: 60% 40%;
-        justify-items: center;
         align-items: center;
         padding: 5px 25px 50px 100px;
         .sectionBioText{
@@ -38,8 +37,7 @@
 /*-FOTOS-*/
 .cuerpoFotos {
     h3 {
-        font-family: 'Cormorant Unicase', serif;
-        text-align: center;
+        @extend %texto;
         padding-top: 20px;
         font-size: nth($fuente, 9);
     }
@@ -48,10 +46,9 @@
         div{
             img{
                 @extend %imagenes;
-                }
+            }
             h4{
-                font-family: 'Cormorant Unicase', serif;
-                text-align: center;
+                @extend %texto;
                 font-size: nth($fuente, 1);
                 &:hover {
                     color: nth($colores, 3);
@@ -66,8 +63,7 @@
     height: auto;
     justify-content: auto;
     h3{
-        font-family: 'Cormorant Unicase', serif;
-        text-align: center;
+        @extend %texto;
         padding-top: 20px;
         font-size: nth($fuente, 9);
     }
@@ -78,8 +74,7 @@
                 @extend %imagenes;
                 }
             h4{
-                font-family: 'Cormorant Unicase', serif;
-                text-align: center;
+                @extend %texto;
                 font-size: nth($fuente, 1);
                 &:hover {
                     color: nth($colores, 3);
@@ -106,8 +101,7 @@
         padding-top: 20px;
     }
     .sectionContactosUno{
-        display: flex;
-        justify-content: center;
+        @include flex (flex, nowrap, center, none);
         padding-top: 30px;
         padding-bottom: 55px;
         form{
@@ -151,11 +145,9 @@
         }
     }
     .sectionContactosDos{
+        @include flex (flex, nowrap, center, none);
         grid-area: link;
         padding-bottom: 30px;
-        justify-content: center;
-        display: flex;
-        }
         a{
             font-family: 'Cormorant Unicase', serif;
             font-size: nth($fuente, 4);
@@ -164,6 +156,7 @@
             &:hover {
                 color: nth($colores, 3);
                 transition: ease all .3s;
+            }
         }
     }
 }
