@@ -4,6 +4,11 @@
     section {
         img {
             width: $ancho;
+            filter:grayscale(100%);
+            &:hover {
+                filter: none;
+                transition: 3s;
+            }
         }
     }
 }
