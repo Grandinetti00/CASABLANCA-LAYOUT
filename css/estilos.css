@@ -160,6 +160,23 @@ header {
         color: gold;
         transition: ease all .3s; }
 
+/*-ERROR-*/
+.errorNumber {
+  background: white; }
+  .errorNumber h1 {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 50px 0px 0px 50px;
+    font-size: 100x; }
+
+.errorMsj {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 50px 0px 0px 50px;
+  font-size: 20px; }
+
 /*---FOOTER---*/
 footer {
   background-color: whitesmoke;
