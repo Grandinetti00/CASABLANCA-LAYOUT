@@ -5,6 +5,11 @@
         height: 357px;
     }
 }
+@media screen and (max-width:980px) {
+    footer {
+        padding: 25px;
+    }
+}
 @media screen and (max-width:950px) {
     .cuerpoBio .sectionBio .sectionBioText {
         font-size: nth($fuente, 1);
@@ -15,11 +20,57 @@
         width: 260px;
         height: 332px;
     }
+    footer {
+        padding: 30px;
+    }
+}
+@media screen and (max-width:930px) {
+    footer {
+        padding: 35px;
+    }
+}
+@media screen and (max-width:910px) {
+    footer {
+        padding: 40px;
+    }
+}
+@media screen and (max-width:890px) {
+    footer {
+        padding: 45px;
+    }
+}
+@media screen and (max-width:875px) {
+    footer {
+        padding: 50px;
+    }
 }
 @media screen and (max-width:850px) {
     .cuerpoBio .sectionBio {
         grid-template-columns: 100%;
         padding: 5px 50px 50px 50px
+    }
+    footer {
+        padding: 55px;
+    }
+}
+@media screen and (max-width:835px) {
+    footer {
+        padding: 60px;
+    }
+}
+@media screen and (max-width:815px) {
+    footer {
+        padding: 65px;
+    }
+}
+@media screen and (max-width:800px) {
+    footer {
+        padding: 70px;
+    }
+}
+@media screen and (max-width:780px) {
+    footer {
+        padding: 75px;
     }
 }
 @media screen and (max-width:765px) {
@@ -34,6 +85,49 @@
         "form"
         "link";
     }
+    footer {
+        padding: 80px;
+    }
+}
+@media screen and (max-width:740px) {
+    footer {
+        padding: 85px;
+    }
+}
+@media screen and (max-width:720px) {
+    footer {
+        padding: 90px;
+    }
+}
+@media screen and (max-width:700px) {
+    footer {
+        padding: 100px;
+    }
+}
+@media screen and (max-width:693px) {
+    footer {
+        padding: 75px;
+    }
+}
+@media screen and (max-width:673px) {
+    footer {
+        padding: 80px;
+    }
+}
+@media screen and (max-width:653px) {
+    footer {
+        padding: 85px;
+    }
+}
+@media screen and (max-width:635px) {
+    footer {
+        padding: 90px;
+    }
+}
+@media screen and (max-width:617px) {
+    footer {
+        padding: 95px;
+    }
 }
 @media screen and (max-width:590px) {
     header h1 {
@@ -47,6 +141,29 @@
     }
     header .nav .nav-item .nav-link {
         font-size: nth($fuente, 1);
+    }
+    footer {
+        padding: 5px;
+    }
+}
+@media screen and (max-width:530px) {
+    footer {
+        padding: 10px;
+    }
+}
+@media screen and (max-width:510px) {
+    footer {
+        padding: 15px;
+    }
+}
+@media screen and (max-width:490px) {
+    footer {
+        padding: 20px;
+    }
+}
+@media screen and (max-width:470px) {
+    footer {
+        padding: 25px;
     }
 }
 @media screen and (max-width:450px) {
@@ -74,7 +191,7 @@
         padding-bottom: 12px;
     }
     footer {
-        padding: 40px;
+        padding: 30px;
     }
     .cuerpoContactos .sectionContactosUno form {
         padding-left: 70px;
@@ -106,11 +223,24 @@
         padding-left: 50px;
     }
     footer {
-        padding: 75px;
+        padding: 40px;
+    }
+}
+@media screen and (max-width:400px) {
+    footer {
+        padding: 45px;
+    }
+}
+@media screen and (max-width:380px) {
+    footer {
+        padding: 50px;
     }
 }
 @media screen and (max-width:370px) {
     .cuerpoContactos .sectionContactosUno form {
         padding-left: 40px;
+    }
+    footer {
+        padding: 55px;
     }
 }
