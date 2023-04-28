@@ -1,5 +1,3 @@
-# Pagina Web CASABLANCA, Entrega final Comisión 48184
+CASABLANCA
 
-## CASABLANCA
-
-POR: FABIÁN GRANDINETTI
+CASABLANCA is a easy layout of a photography website. This is made with HTML and CSS (processed in SASS).
